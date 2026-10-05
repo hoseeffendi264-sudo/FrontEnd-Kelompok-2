@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Nusantara — Cita Rasa Nusantara dalam Setiap Tegukan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark kn-navbar sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <i class="bi bi-cup-hot-fill me-2 fs-4"></i>
+        Kopi Nusantara
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="beranda">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active kn-carousel-item">
+          <img src="img/hero1.jpg" class="d-block w-100" alt="Hero 1">
+          <div class="kn-carousel-overlay d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+              <h1 class="display-4 fw-bold text-white mb-3">Cita Rasa Nusantara</h1>
+              <p class="lead text-white-50 mb-4">Nikmati kopi terbaik dari berbagai penjuru Indonesia</p>
+              <a href="#menu" class="btn btn-lg kn-btn-primary rounded-pill px-4">Lihat Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item kn-carousel-item">
+          <img src="img/hero2.jpg" class="d-block w-100" alt="Hero 2">
+          <div class="kn-carousel-overlay d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+              <h1 class="display-4 fw-bold text-white mb-3">Promo Spesial Bulan Ini</h1>
+              <p class="lead text-white-50 mb-4">Diskon 20% untuk semua minuman kopi susu</p>
+              <a href="#menu" class="btn btn-lg kn-btn-primary rounded-pill px-4">Pesan Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item kn-carousel-item">
+          <img src="img/hero3.jpg" class="d-block w-100" alt="Hero 3">
+          <div class="kn-carousel-overlay d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+              <h1 class="display-4 fw-bold text-white mb-3">Biji Kopi Pilihan</h1>
+              <p class="lead text-white-50 mb-4">Dari Gayo, Toraja, Kintamani, dan Flores</p>
+              <a href="#tentang" class="btn btn-lg kn-btn-primary rounded-pill px-4">Tentang Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="menu" class="py-5 kn-section-menu">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold kn-heading">Menu Kami</h2>
+        <p class="text-muted">Pilihan kopi dan minuman terbaik dari seluruh Nusantara</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card kn-card h-100 shadow-sm rounded-3 border-0" data-bs-toggle="modal" data-bs-target="#modalProduk1" style="cursor:pointer;">
+            <img src="img/kopi1.jpg" class="card-img-top kn-card-img" alt="Kopi Gayo" />
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold">Kopi Gayo</h5>
+              <p class="card-text text-muted">Kopi arabika premium dari dataran tinggi Gayo, Aceh. Rasa full body dengan aroma earthy dan sedikit fruity.</p>
+              <p class="kn-price fw-bold">Rp 25.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card kn-card h-100 shadow-sm rounded-3 border-0" data-bs-toggle="modal" data-bs-target="#modalProduk2" style="cursor:pointer;">
+            <img src="img/kopi2.jpg" class="card-img-top kn-card-img" alt="Kopi Toraja" />
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold">Kopi Toraja</h5>
+              <p class="card-text text-muted">Kopi arabika khas Sulawesi Selatan dengan cita rasa herbal, spicy, dan dark chocolate.</p>
+              <p class="kn-price fw-bold">Rp 28.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card kn-card h-100 shadow-sm rounded-3 border-0" data-bs-toggle="modal" data-bs-target="#modalProduk3" style="cursor:pointer;">
+            <img src="img/kopi3.jpg" class="card-img-top kn-card-img" alt="Kopi Kintamani" />
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold">Kopi Kintamani</h5>
+              <p class="card-text text-muted">Kopi arabika dari Bali dengan karakter citrusy, clean, dan aroma jeruk yang segar.</p>
+              <p class="kn-price fw-bold">Rp 27.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card kn-card h-100 shadow-sm rounded-3 border-0" data-bs-toggle="modal" data-bs-target="#modalProduk4" style="cursor:pointer;">
+            <img src="img/kopi4.jpg" class="card-img-top kn-card-img" alt="Es Kopi Susu Nusantara" />
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold">Es Kopi Susu Nusantara</h5>
+              <p class="card-text text-muted">Signature drink kami! Perpaduan espresso, susu segar, dan gula aren asli.</p>
+              <p class="kn-price fw-bold">Rp 22.000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card kn-card h-100 shadow-sm rounded-3 border-0" data-bs-toggle="modal" data-bs-target="#modalProduk5" style="cursor:pointer;">
+            <img src="img/kopi5.jpg" class="card-img-top kn-card-img" alt="Kopi Flores Bajawa" />
+            <div class="card-body text-center p-4">
+              <h5 class="card-title fw-bold">Kopi Flores Bajawa</h5>
+              <p class="card-text text-muted">Kopi arabika dari NTT dengan rasa nutty, chocolatey, dan body yang medium.</p>
+              <p class="kn-price fw-bold">Rp 30.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="py-5 kn-section-tentang">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6 text-center">
+          <img src="img/tentang.jpg" alt="Tentang Kopi Nusantara" class="img-fluid rounded-4 shadow" />
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 class="fw-bold kn-heading mb-3">Tentang Kopi Nusantara</h2>
+          <p class="text-muted mb-3">
+            <strong>Kopi Nusantara</strong> didirikan dengan semangat untuk memperkenalkan kekayaan kopi Indonesia kepada dunia. Kami bekerja langsung dengan petani kopi lokal dari Aceh hingga Papua untuk menghadirkan biji kopi berkualitas terbaik.
+          </p>
+          <p class="text-muted mb-4">
+            Setiap cangkir kopi yang kami sajikan adalah hasil dari proses roasting yang cermat dan penyeduhan yang penuh perhatian, agar cita rasa asli dari setiap daerah asal kopi dapat dinikmati sepenuhnya.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <div class="text-center p-3 bg-white rounded-3 shadow-sm kn-stat-box">
+              <h4 class="fw-bold kn-text-primary mb-0">5+</h4>
+              <small class="text-muted">Daerah Asal</small>
+            </div>
+            <div class="text-center p-3 bg-white rounded-3 shadow-sm kn-stat-box">
+              <h4 class="fw-bold kn-text-primary mb-0">10K+</h4>
+              <small class="text-muted">Cangkir Terjual</small>
+            </div>
+            <div class="text-center p-3 bg-white rounded-3 shadow-sm kn-stat-box">
+              <h4 class="fw-bold kn-text-primary mb-0">4.8</h4>
+              <small class="text-muted">Rating</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-5 kn-section-faq">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold kn-heading">Pertanyaan yang Sering Diajukan</h2>
+        <p class="text-muted">Temukan jawaban untuk pertanyaan umum seputar Kopi Nusantara</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="accordion kn-accordion" id="faqAccordion">
+
+            <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header">
+                <button class="accordion-button kn-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  Dari mana saja biji kopi Kopi Nusantara berasal?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Kami mengambil biji kopi langsung dari petani di berbagai daerah Indonesia, antara lain Gayo (Aceh), Toraja (Sulawesi Selatan), Kintamani (Bali), Bajawa (Flores, NTT), dan Wamena (Papua). Setiap daerah memiliki karakteristik rasa yang unik.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header">
+                <button class="accordion-button kn-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  Apakah bisa pesan untuk delivery?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Ya! Kami bekerja sama dengan GoFood, GrabFood, dan ShopeeFood. Anda juga bisa memesan langsung melalui WhatsApp kami di nomor 0812-3456-7890 untuk area sekitar kedai.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header">
+                <button class="accordion-button kn-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  Apakah tersedia opsi non-kopi?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Tentu saja! Kami menyediakan Matcha Latte, Cokelat Panas, Thai Tea, dan berbagai minuman non-kopi lainnya yang tak kalah lezat.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3 rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header">
+                <button class="accordion-button kn-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  Jam operasional Kopi Nusantara?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Kami buka setiap hari dari pukul 07.00 - 22.00 WIB. Untuk hari libur nasional, jam operasional mungkin menyesuaikan. Silakan cek media sosial kami untuk informasi terbaru.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontak" class="kn-footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4 text-center text-md-start">
+          <h5 class="fw-bold text-white mb-3">
+            <i class="bi bi-cup-hot-fill me-2"></i>Kopi Nusantara
+          </h5>
+          <p class="text-white-50 small">
+            Menghadirkan cita rasa kopi terbaik dari berbagai penjuru Nusantara ke dalam setiap cangkir yang kami sajikan.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <h5 class="fw-bold text-white mb-3">Jam Operasional</h5>
+          <ul class="list-unstyled text-white-50 small">
+            <li>Senin - Jumat: 07.00 - 22.00</li>
+            <li>Sabtu - Minggu: 08.00 - 23.00</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-end">
+          <h5 class="fw-bold text-white mb-3">Hubungi Kami</h5>
+          <ul class="list-unstyled text-white-50 small">
+            <li><i class="bi bi-geo-alt-fill me-1"></i> Jl. Kopi No. 17, Jakarta Selatan</li>
+            <li><i class="bi bi-telephone-fill me-1"></i> 0812-3456-7890</li>
+            <li><i class="bi bi-envelope-fill me-1"></i> halo@kopinusantara.id</li>
+          </ul>
+          <div class="d-flex gap-2 justify-content-center justify-content-md-end mt-3">
+            <a href="#" class="kn-social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="kn-social-icon"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="kn-social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4" />
+      <p class="text-center text-white-50 small mb-0">&copy; 2026 Kopi Nusantara. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="modalProduk1" tabindex="-1" aria-labelledby="modalProduk1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content kn-modal-content border-0 rounded-4 overflow-hidden">
+        <img src="img/kopi1.jpg" class="img-fluid" alt="Kopi Gayo" />
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalProduk1Label">Kopi Gayo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Kopi arabika premium dari dataran tinggi Gayo, Aceh. Diproses secara wet-hulled (Giling Basah) yang khas Sumatera, menghasilkan rasa full body dengan aroma earthy, sedikit fruity, dan tingkat keasaman yang rendah.</p>
+          <ul class="list-unstyled text-muted small">
+            <li><i class="bi bi-geo-alt me-1 kn-text-primary"></i> Asal: Gayo, Aceh</li>
+            <li><i class="bi bi-bar-chart me-1 kn-text-primary"></i> Roast Level: Medium-Dark</li>
+            <li><i class="bi bi-cup-straw me-1 kn-text-primary"></i> Notes: Earthy, Fruity, Full Body</li>
+          </ul>
+          <h5 class="kn-price fw-bold mt-3">Rp 25.000</h5>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn kn-btn-primary rounded-pill px-4" data-bs-dismiss="modal">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProduk2" tabindex="-1" aria-labelledby="modalProduk2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content kn-modal-content border-0 rounded-4 overflow-hidden">
+        <img src="img/kopi2.jpg" class="img-fluid" alt="Kopi Toraja" />
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalProduk2Label">Kopi Toraja</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Kopi arabika khas Sulawesi Selatan yang tumbuh di ketinggian 1.100-1.800 mdpl. Memiliki cita rasa herbal, spicy, dan dark chocolate dengan body yang tebal dan aftertaste yang panjang.</p>
+          <ul class="list-unstyled text-muted small">
+            <li><i class="bi bi-geo-alt me-1 kn-text-primary"></i> Asal: Toraja, Sulawesi Selatan</li>
+            <li><i class="bi bi-bar-chart me-1 kn-text-primary"></i> Roast Level: Medium</li>
+            <li><i class="bi bi-cup-straw me-1 kn-text-primary"></i> Notes: Herbal, Spicy, Dark Chocolate</li>
+          </ul>
+          <h5 class="kn-price fw-bold mt-3">Rp 28.000</h5>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn kn-btn-primary rounded-pill px-4" data-bs-dismiss="modal">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProduk3" tabindex="-1" aria-labelledby="modalProduk3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content kn-modal-content border-0 rounded-4 overflow-hidden">
+        <img src="img/kopi3.jpg" class="img-fluid" alt="Kopi Kintamani" />
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalProduk3Label">Kopi Kintamani</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Kopi arabika dari dataran tinggi Kintamani, Bali. Ditanam berdampingan dengan pohon jeruk sehingga menghasilkan karakter citrusy yang unik, clean, dan menyegarkan.</p>
+          <ul class="list-unstyled text-muted small">
+            <li><i class="bi bi-geo-alt me-1 kn-text-primary"></i> Asal: Kintamani, Bali</li>
+            <li><i class="bi bi-bar-chart me-1 kn-text-primary"></i> Roast Level: Light-Medium</li>
+            <li><i class="bi bi-cup-straw me-1 kn-text-primary"></i> Notes: Citrusy, Clean, Fresh</li>
+          </ul>
+          <h5 class="kn-price fw-bold mt-3">Rp 27.000</h5>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn kn-btn-primary rounded-pill px-4" data-bs-dismiss="modal">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProduk4" tabindex="-1" aria-labelledby="modalProduk4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content kn-modal-content border-0 rounded-4 overflow-hidden">
+        <img src="img/kopi4.jpg" class="img-fluid" alt="Es Kopi Susu Nusantara" />
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalProduk4Label">Es Kopi Susu Nusantara</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Signature drink kami! Perpaduan sempurna antara double shot espresso, susu segar premium, dan gula aren asli dari Banten. Creamy, manis alami, dan menyegarkan.</p>
+          <ul class="list-unstyled text-muted small">
+            <li><i class="bi bi-star-fill me-1 kn-text-primary"></i> Best Seller</li>
+            <li><i class="bi bi-snow me-1 kn-text-primary"></i> Disajikan dingin</li>
+            <li><i class="bi bi-cup-straw me-1 kn-text-primary"></i> Notes: Creamy, Sweet, Bold</li>
+          </ul>
+          <h5 class="kn-price fw-bold mt-3">Rp 22.000</h5>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn kn-btn-primary rounded-pill px-4" data-bs-dismiss="modal">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProduk5" tabindex="-1" aria-labelledby="modalProduk5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content kn-modal-content border-0 rounded-4 overflow-hidden">
+        <img src="img/kopi5.jpg" class="img-fluid" alt="Kopi Flores Bajawa" />
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold" id="modalProduk5Label">Kopi Flores Bajawa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Kopi arabika dari dataran tinggi Bajawa, Flores, NTT. Diproses secara semi-washed menghasilkan rasa nutty, chocolatey, dengan body medium dan keasaman yang seimbang.</p>
+          <ul class="list-unstyled text-muted small">
+            <li><i class="bi bi-geo-alt me-1 kn-text-primary"></i> Asal: Bajawa, Flores, NTT</li>
+            <li><i class="bi bi-bar-chart me-1 kn-text-primary"></i> Roast Level: Medium</li>
+            <li><i class="bi bi-cup-straw me-1 kn-text-primary"></i> Notes: Nutty, Chocolatey, Balanced</li>
+          </ul>
+          <h5 class="kn-price fw-bold mt-3">Rp 30.000</h5>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn kn-btn-primary rounded-pill px-4" data-bs-dismiss="modal">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI dan Kalori Harian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kalkulator Kesehatan</h1>
+            <p>Hitung BMI dan Kebutuhan Kalori Harian</p>
+        </header>
+
+        <div class="calculator-box">
+            <form id="healthForm">
+                <div class="form-group">
+                    <label for="nama"> Nama Lengkap:</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="usia"> Usia(tahun):</label>
+                    <input type="number" id="usia" placeholder="Contoh: 20" min="1" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jenisKelamin"> Jenis Kelamin:</label>
+                    <select id="jenisKelamin" required>
+                        <option value=""> Pilih Jenis Kelamin:</option>
+                        <option value="laki-laki"> Laki-laki</option>
+                        <option value="perempuan"> Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tinggi"> Tinggi Badan(cm):</label>
+                    <input type="number" id="tinggi" placeholder="Contoh: 170" min="50" max="250" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="berat">Berat Badan(kg):</label>
+                    <input type="number" id="berat" placeholder="Contoh: 65" min="20" max="300" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="aktivitas">Tingkat Aktivitas:</label>
+                    <select id="aktivitas" required>
+                        <option value="">Pilih Tingkat Aktivitas</option>
+                        <option value="1.2">Jarang Olahraga (Sedentari)</option>
+                        <option value="1.375">Olahraga Ringan (1-3 hari/minggu)</option>
+                        <option value="1.55">Olahraga Sedang (3-5 hari/minggu)</option>
+                        <option value="1.725">Olahraga Berat (6-7 hari/minggu)</option>
+                        <option value="1.9">Olahraga Sangat Berat (Pekerja Fisik)</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="hitungBtn"> Hitung Sekarang</button>
+                <button type="reset" id="resetBtn"> Reset</button>
+            </form>
+
+            <div id="hasil" class="hasil-box" style="display: none;">
+                <h2> Hasil Perhitungan</h2>
+                
+                <div class="result-item">
+                    <h3> Nama:</h3>
+                    <p id="resultNama">-</p>
+                </div>
+
+                <div class="result-item">
+                    <h3> BMI:</h3>
+                    <p id="resultBMI" class="nilai-besar">-</p>
+                    <p id="kategoriBMI" class="kategori">-</p>
+                </div>
+
+                <div class="result-item">
+                    <h3> Kalori Harian:</h3>
+                    <p id="resultKalori" class="nilai-besar">- kkal/hari</p>
+                    <small> Untuk mempertahankan berat badan</small>
+                </div>
+
+                <div class="recommendations">
+                    <h3> Rekomendasi:</h3>
+                    <ul id="rekomendasiList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Mini Project Kelompok 2</p>
+            <p>Rumus: BMI = Berat(kg) / Tinggi(m)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
